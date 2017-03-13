@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>exercice 4</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button type="button" name="button1" id="button1" >+</button>
+  <button type="button" name="button2" id="button2" >validez</button>
+  <button type="button" name="button3" id="button3" >validez</button>
+  <button type="button" name="button4" id="button4" >validez</button>
+  <button type="button" name="button5" id="button5" >validez</button>
+  <div id="rectangle"></div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+  </script>
+  <script>
+  $("#button1").click(function() {
+    if ($("#rectangle").height() < 100){
+      $("#rectangle").css("height", "+=10px");
+    }else {
+      $("#rectangle").css("height", "10px");
+    }
+  })
+  $("#button2").click(function(){
+    $("#rectangle").css("background", "green");
+    $("#rectangle").show();
+  });
+  $("#button3").click(function(){
+    $("#rectangle").css("background", "orange");
+    $("#rectangle").show();
+  });
+  $("#button4").click(function(){
+    $("#rectangle").hide();
+  });
+  $("#button5").click(function(){
+    $("#rectangle").show();
+  });
+  </script>
+</body>
+</html>
